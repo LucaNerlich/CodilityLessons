@@ -6,11 +6,5 @@ java/out/
 java/.idea/
 java/track-ampel.ids
 *.log
-.idea/compiler.xml
-.idea/copyright/
-.idea/description.html
-.idea/misc.xml
-.idea/modules.xml
-.idea/project-template.xml
-.idea/workspace.xml
+.idea/*
 CodilityLessons.iml
