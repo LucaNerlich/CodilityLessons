@@ -8,14 +8,13 @@ import java.util.Random;
 public class CyclicRotation {
 
     public static void main(String[] args) {
-        int[] a = new int[5000000];
-        int[] b = new int[5000000];
+        int[] a = new int[50000000];
 
         Random rand = new Random();
         for (int i = 0; i < a.length; i++) {
             a[i] = rand.nextInt(10) + 1;
-            ;
         }
+        int[] b = a.clone();
 
         long startTime = System.currentTimeMillis();
         sol_luca(a, 1);
