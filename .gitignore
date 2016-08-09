@@ -8,3 +8,4 @@ java/track-ampel.ids
 *.log
 .idea/*
 CodilityLessons.iml
+.idea/
