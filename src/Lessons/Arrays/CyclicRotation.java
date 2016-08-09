@@ -8,6 +8,7 @@ import java.util.Random;
 public class CyclicRotation {
 
     public static void main(String[] args) {
+        long startTime = System.currentTimeMillis();
         int[] a = new int[50000000];
 
         Random rand = new Random();
@@ -16,17 +17,18 @@ public class CyclicRotation {
         }
         int[] b = a.clone();
 
-        long startTime = System.currentTimeMillis();
-        sol_luca(a, 1);
         long endTime = System.currentTimeMillis();
-        long totalTime = endTime - startTime;
-        System.out.println(totalTime);
+        System.out.println(endTime - startTime);
+
+        startTime = System.currentTimeMillis();
+        sol_luca(a, 1);
+        endTime = System.currentTimeMillis();
+        System.out.println(endTime - startTime);
 
         startTime = System.currentTimeMillis();
         sol_fabian(b, 1);
         endTime = System.currentTimeMillis();
-        totalTime = endTime - startTime;
-        System.out.println(totalTime);
+        System.out.println(endTime - startTime);
     }
 
     public static int[] sol_luca(int[] a, int k) {
