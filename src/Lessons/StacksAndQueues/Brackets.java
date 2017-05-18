@@ -24,6 +24,8 @@ public class Brackets {
     F = )
      */
 
+    //todo improve speed by killing loop if error detected
+
     final char a = '(';
     final char b = '{';
     final char c = '[';

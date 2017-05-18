@@ -15,5 +15,7 @@ public class Main {
         System.out.println("#######");
         System.out.println("Should be 0:");
         System.out.println(brackets.solution("{[}"));
+        System.out.println(brackets.solution("{[[[]]]}"));
+        System.out.println(brackets.solution("([]][[((]]]))"));
     }
 }
