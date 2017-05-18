@@ -9,3 +9,5 @@ java/track-ampel.ids
 .idea/*
 CodilityLessons.iml
 .idea/
+*.class
+out/
